@@ -10,13 +10,12 @@ pipeline
                 git 'https://github.com/intelliqittrainings/maven.git'
             }
         }
-        stage('ContinuousBuild')
-        {
-            steps
-            {
-                sh 'mvn package'
-            }
-        }
+        
+        stage('Build') {
+           steps {
+               sh './build.sh'
+           }
+      }
         stage('ContinuousDeployment')
         {
             steps
