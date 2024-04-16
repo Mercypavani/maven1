@@ -11,11 +11,11 @@ pipeline
             }
         }
         
-      //   stage('Build') {
-      //      steps {
-      //          sh 'build'
-      //      }
-      // }
+        stage('Build') {
+           steps {
+               sh 'build'
+           }
+      }
         stage('ContinuousDeployment')
         {
             steps
