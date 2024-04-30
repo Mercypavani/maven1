@@ -37,7 +37,7 @@ pipeline
         success
         {
             input message: 'Need approval from the DM!', submitter: 'srinivas'
-               deploy adapters: [tomcat10-(credentialsId: 'bfb67f1d-2f4e-430c-bb8d-30584116bd00', path: '', url: 'http://18.209.7.222:8080/')], contextPath: 'prod1', war: '**/*.war'
+               deploy adapters:[tomcat10-(credentialsId:'bfb67f1d-2f4e-430c-bb8d-30584116bd00',path:'',url:'http://18.209.7.222:8080/')],contextPath:'prod1',war:'**/*.war'
         }
         failure
         {
