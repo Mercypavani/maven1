@@ -11,9 +11,9 @@ pipeline
             }
         }
         
-        stage('Build') {
+        stage('ContinuousBuild') {
            steps {
-               sh 'mvn build'
+               sh 'mvn package'
            }
       }
         stage('ContinuousDeployment')
